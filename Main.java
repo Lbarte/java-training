@@ -6,7 +6,17 @@ public class Main {
 
   
   public static void main(String[] args){
-        ewq();
+        eee();
+        
+        //eew();
+        
+        //eeq();
+        
+        //ewe();
+        
+        //eww();
+        
+        //ewq();
         
         //eqe();
         
@@ -43,8 +53,93 @@ public class Main {
         
     }
     
+    public static void eee() {
+      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+      
+      String n = reader.readLine();
+      int y = Integer.parseInt(reader.readLine());
+      int m = Integer.parseInt(reader.readLine());
+      int d = Integer.parseInt(reader.readLine());
+      
+      System.out.println("My name is "+n+".");
+      System.out.println("I was born on "+m+"/"+d+"/"+y);
+    }
+    
+    public static void eew() {
+      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+      int s = 0, n;
+      while (true) {
+        n = Integer.parseInt(reader.readLine());
+        s += n;
+        if (n == -1) {
+          break;
+        }
+      }
+      System.out.println(s);
+    }
+    
+    public static void eeq() {
+      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+      int q = Integer.parseInt(reader.readLine());
+      int w = Integer.parseInt(reader.readLine());
+      int e = Integer.parseInt(reader.readLine());
+      
+      
+      if ((q == w)&&(w == e)&&(e == q)) {
+         System.out.println(q);
+        } else if (q==w) {
+          System.out.println(q);
+        } else if (w==e) {
+          System.out.println(w);
+        } else if (e==q) {
+          System.out.println(e);
+        } else if ((q>w)&&(q>e)) {
+          if (w>e) {
+            System.out.println(w);
+          } else if (e>w) {
+            System.out.println(e);
+          }
+        } else if ((w>e)&&(w>q)) {
+          if (e>q) {
+            System.out.println(e);
+          } else if (q>e) {
+            System.out.println(q);
+          }
+        } else if ((e>q)&&(e>w)) {
+          if (q>w) {
+            System.out.println(q);
+          } else if (w>q) {
+            System.out.println(w);
+          }
+        }
+      
+      
+      
+    }
+    
+    public static void ewe() {
+      for (int o = 0; o < 100; o++){
+        System.out.println("I will never work foe peanuts. Amigo");
+      }
+    }
+    
+    public static void eww() {
+      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+      String name = reader.readLine();
+      
+      for (int i = 0; i < 10; i++) {
+        System.out.println(name + " loves me.");
+      }
+    }
+    
     public static void ewq() {
-      for ()
+      for (int i = 0; i < 10; i++) {
+        System.out.print(8);
+      }
+      System.out.println();
+      for (int i = 0; i < 10; i++) {
+        System.out.println(8);
+      }
     }
     
     public static void eqe() {
