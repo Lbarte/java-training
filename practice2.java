@@ -2,6 +2,47 @@ package com.practice;
 
 public class practice2 {
 
+    public static double getDistance(int x1, int y1, int x2, int y2) {
+        double dist = double.math.sqrt((x2-x1)^2+(y2-y1)^2);
+        return dist;
+    }
+    
+    private static int catCount = 0;
+
+    public Cat() {
+        catCount++;
+    }
+
+    public static int getCatCount() {
+        return catCount;
+
+    }
+
+    public static void setCatCount(int catCount) {
+        Cat.catCount = catCount;
+
+    }
+    
+    static int catCount = 0;
+    
+    public Cat() {
+      catCount++;
+    }
+    
+    public static void calculateBMI(double weight, double height) {
+            
+            double bmi = weight/(height*height);
+            if(bmi>=30.0) {
+              System.out.println("Obese: BMI >= 30");
+            } else if (bmi>=25.0) {
+              System.out.println("Overweight: 25 <= BMI < 30");
+            } else if (bmi>=18.5) {
+              System.out.println("Normal: 18.5 <= BMI < 25");
+            } else {
+              System.out.println("Underweight: BMI < 18.5");
+            }
+        }
+    
     public static void main (String[] args) {
       //positive ints only
       BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
