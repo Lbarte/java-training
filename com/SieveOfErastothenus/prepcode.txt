@@ -1,0 +1,27 @@
+Sieve of erastothenus. Prepcode
+
+Task :
+Find all prime numbers up to given limit
+
+How to do that ?
+Get number beginning from 2
+Eliminate all numbers that are dividing by it without rest
+Get next number and so on up to given limit
+...
+All numbers left are prime numbers
+
+PREPCODE
+
+GET limit number from input
+INITIALIZE array of numbers from 2 to given limit
+LOOP for all numbers left in array as Q
+LOOP for all numbers from Q up to given limit as W
+CHECK if W is dividing without rest on Q
+IF yes, then eliminate W number from array
+END LOOP W
+END LOOP Q
+OUTPUT all numbers that are left in array
+
+How to test code?
+Each number in the output should be in limits from 0 to some inputted positive n
+Each number cannot be divided on another number from output
