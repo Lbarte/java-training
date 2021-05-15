@@ -9,6 +9,15 @@ public class Computer {
     private int arSize;
     private ArrayList<Integer> result;
     
+    public void getPrimitives() throws Exception {
+      System.out.println("Searching for primitives\nInput upper limit:");
+      InputHandl ih = new InputHandl();
+      setLimit(ih.getLimit());
+      arrayInit();
+      setPrimitives();
+      output();
+    }
+    
     //TestOnly
     public ArrayList<Integer> getResult() {
       return result;

@@ -13,7 +13,9 @@ public class Sieve {
    //ct.arSizeTest();
    //ct.arInitTest();
    //ct.resultTest();
-   ct.setPrimitivesTest();
+   //ct.setPrimitivesTest();
+   Computer c = new Computer();
+   c.getPrimitives();
    //trash
    //System.setOut(System.out);
    //System.out.println("end");
