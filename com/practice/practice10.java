@@ -2,6 +2,17 @@ package com.practice.app.src.main.java.com.practice;
 
 public class practice10 {
   //method wrapper()
+  Iterator<Set.Entry<String, Object>> iterator = map.entrySet().iterator();
+  String key;
+  Object value;
+  while(iterator.hasNext()) {
+    Map.Entry<String, Object> pair = iterator.next();
+    key = pair.getKey();
+    value = pair.getValue();
+    System.out.println(key+" - "+value);
+  }
+  
+  //method wrapper()
   BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
   int[] array = new int[20];
   for (int i = 0; i < 20; i++) {
